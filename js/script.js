@@ -10,9 +10,16 @@ bottone.addEventListener("click", function() {
     var prezzoTotale = parseInt(50);
     console.log("PrezzoBase $", prezzoTotale);
 
+
+
+//Verificare se l'utente ha selezionato qualche checkbox, 
+    //se si allora aggiornare il totale. 
+
+
+//CHEESE
     //Calcolare la somma di cheese
-    var cheese = document.getElementById("cheese").value;
-    parseInt(cheese);
+    var cheeseString = document.getElementById("cheese").value;
+    var cheese = parseInt(cheeseString);
     console.log("Il valore di cheese è: ", cheese);
 
     //checked cheese
@@ -20,29 +27,80 @@ bottone.addEventListener("click", function() {
     console.log("cheeseBool è ", cheeseBoolean);
 
     if ( cheeseBoolean == true ) {
-
+        prezzoTotale = prezzoTotale + cheese;
     }
 
 
+//TOMATO
+    //Calcolare la somma di tomato
+    var tomatoString = document.getElementById("tomato").value;
+    var tomato = parseInt(tomatoString);
+
+    //checked tomato
+    var tomatoBoolean = document.getElementById("tomato").checked;
+
+    if ( tomatoBoolean == true ) {
+        prezzoTotale = prezzoTotale + tomato;
+    }
 
 
+//EGG
+    //Calcolare la somma di egg
+    var eggString = document.getElementById("egg").value;
+    var egg = parseInt(eggString);
 
-    // var tomato = document.getElementById("tomato").value;
+    //checked egg
+    var eggBoolean = document.getElementById("egg").checked;
 
-    // var egg = document.getElementById("egg").value;
+    if ( eggBoolean == true ) {
+        prezzoTotale = prezzoTotale + egg;
+    }
 
-    // var lettuce = document.getElementById("lettuce").value;
 
-    // var mustard = document.getElementById("mustard").value;
+//LETTUCE
+    //Calcolare la somma di lettuce
+    var lettuceString = document.getElementById("lettuce").value;
+    var lettuce = parseInt(lettuceString);
 
-    // var ketchup = document.getElementById("ketchup").value;
+    //checked lettuce
+    var lettuceBoolean = document.getElementById("lettuce").checked;
 
-    //Verificare se l'utente ha selezionato qualche checkbox, 
-    //se si allora aggiornare il totale. 
-    // if ( cheese.checked == true ) {
-    //     console.log("ho clickato su cheese");
-    // }
+    if ( lettuceBoolean == true ) {
+        prezzoTotale = prezzoTotale + lettuce;
+    }
 
+
+//MUSTARD
+    //Calcolare la somma di mustard
+    var mustardString = document.getElementById("mustard").value;
+    var mustard = parseInt(mustardString);
+
+    //checked mustard
+    var mustardBoolean = document.getElementById("mustard").checked;
+
+    if ( mustardBoolean == true ) {
+        prezzoTotale = prezzoTotale + mustard;
+    }
+
+ 
+//KETCHUP
+    //Calcolare la somma di ketchup
+    var ketchupString = document.getElementById("ketchup").value;
+    var ketchup = parseInt(ketchupString);
+
+    //checked ketchup
+    var ketchupBoolean = document.getElementById("ketchup").checked;
+
+    if ( ketchupBoolean == true ) {
+        prezzoTotale = prezzoTotale + ketchup;
+    }
+
+    console.log("la somma totale deve essere di 94, La somma è: ", prezzoTotale);
+
+    
+    //Calcolare lo sconto coupon
+    
+  
     //Stampare
     
     
