@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*COMMON*/
+img {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+/*HEAD*/
+
+header {
+    padding: 100px;
+    background-color: rgb(216, 170, 71);
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+
+/*MAIN*/
+.wrapper-main {
+    padding: 100px;
+}
+
+.checkbox-select {
+    margin-top: 60px;
+}
+
+.checkbox-select img {
+    width: 75px;
+    height: auto;
+}
+
+.spaziatura {
+    padding: 30px;
+}
+
+/*COUPON*/
+
+.coupon {
+    margin-top: 50px;
+}
+
+/*BUTTON*/
+.button-wrapper {
+    margin-top: 50px;
+}
+
+.button-wrapper button {
+    padding-top: 16px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 16px;
+    background-color: rgb(216, 170, 71);
+    border-radius: 7px;
+    border: rgb(216, 170, 71);
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: rgb(199, 69, 119);
+}
+
+.left {
+    text-align: left;
+    padding: 30px;
+    color: white;
+}
+
+.right {
+    text-align: right;
+    padding: 30px;
+    color: white;
+}
