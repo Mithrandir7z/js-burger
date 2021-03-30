@@ -99,15 +99,19 @@ bottone.addEventListener("click", function() {
 
     
     //Calcolare lo sconto coupon
-    
+    //Se inserisci questo codice DFINSX si applica il 20% di sconto
+
+    var coupon = "DFINSX";
+
+    var couponInput = document.getElementById("coupon-lab").value;
+    console.log("cannotInput è: ", couponInput);
+
+    if ( couponInput == coupon ) {
+        prezzoTotale = prezzoTotale - ( prezzoTotale * 20 / 100 );
+    }
   
     //Stampare
-    
+    document.getElementById("totale").innerHTML = "$ " + prezzoTotale;
     
 });
-
-
-
-//Calcolare l'eventuale sconto coupon
-
 
